@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fmc-photon-dose"
+version = "0.1.0"
+description = "Fast Monte Carlo prototype for photon radiotherapy dose calculation"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+fmc-dose = "fmc.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
